@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uncategorized_Expenses</fullName>
+    <columns>NAME</columns>
+    <columns>Summary__c</columns>
+    <columns>Expense_Date__c</columns>
+    <columns>Category__c</columns>
+    <columns>Expense_Owner__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Source__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Category__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Uncategorized Expenses</label>
+</ListView>

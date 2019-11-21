@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How the expense was paid for</inlineHelpText>
+    <label>Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Jenny&#39;s Chase Sapphire</fullName>
+                <default>false</default>
+                <label>Jenny&#39;s Chase Sapphire</label>
+            </value>
+            <value>
+                <fullName>Kent&#39;s Chase Amazon</fullName>
+                <default>false</default>
+                <label>Kent&#39;s Chase Amazon</label>
+            </value>
+            <value>
+                <fullName>Jenny&#39;s Chase Standard</fullName>
+                <default>false</default>
+                <label>Jenny&#39;s Chase Standard</label>
+            </value>
+            <value>
+                <fullName>Jenny&#39;s Citi</fullName>
+                <default>false</default>
+                <label>Jenny&#39;s Citi</label>
+            </value>
+            <value>
+                <fullName>PNC</fullName>
+                <default>false</default>
+                <label>PNC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

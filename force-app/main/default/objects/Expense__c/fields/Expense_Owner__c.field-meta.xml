@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Owner__c</fullName>
+    <externalId>false</externalId>
+    <label>Expense Owner</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kent</fullName>
+                <default>false</default>
+                <label>Kent</label>
+            </value>
+            <value>
+                <fullName>Jenny</fullName>
+                <default>false</default>
+                <label>Jenny</label>
+            </value>
+            <value>
+                <fullName>Susan</fullName>
+                <default>false</default>
+                <label>Susan</label>
+            </value>
+            <value>
+                <fullName>Amy</fullName>
+                <default>false</default>
+                <label>Amy</label>
+            </value>
+            <value>
+                <fullName>Jenny&#39;s Mom</fullName>
+                <default>false</default>
+                <label>Jenny&#39;s Mom</label>
+            </value>
+            <value>
+                <fullName>Kent&#39;s Parents</fullName>
+                <default>false</default>
+                <label>Kent&#39;s Parents</label>
+            </value>
+            <value>
+                <fullName>Family</fullName>
+                <default>false</default>
+                <label>Family</label>
+            </value>
+            <value>
+                <fullName>Ethan</fullName>
+                <default>false</default>
+                <label>Ethan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

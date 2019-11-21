@@ -1,0 +1,3 @@
+<design:component label="Expense Split Display">
+   <design:attribute name="listOfExpenses" label="List of Expenses" />
+</design:component>
