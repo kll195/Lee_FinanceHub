@@ -152,14 +152,15 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Expense</label>
+    <label>Line Item</label>
     <nameField>
         <displayFormat>EX-{00000}</displayFormat>
         <label>Expense Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Expenses</pluralLabel>
+    <pluralLabel>Line Items</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <searchResultsAdditionalFields>Summary__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>

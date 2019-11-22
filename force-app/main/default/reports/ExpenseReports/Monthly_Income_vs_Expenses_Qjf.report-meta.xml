@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
-        <calculatedFormula>10806</calculatedFormula>
+        <calculatedFormula>Expense__c.Income_Amount__c:SUM-Expense__c.Expense_Amount__c:SUM</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA1</developerName>
-        <isActive>false</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Monthly Income</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>Expense__c.Amount__c:SUM/((TODAY() - DATE (YEAR(TODAY()), 01, 01))  /  ( 365 / 12 ))</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA2</developerName>
-        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
         <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Average Monthly Expenditure</masterLabel>
+        <masterLabel>Income/Expense Delta</masterLabel>
         <scale>2</scale>
     </aggregates>
     <chart>
@@ -24,17 +14,14 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Expense__c.Amount__c</column>
+            <column>FORMULA1</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Expense__c.Expense_Date__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Expense__c.Category__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -50,38 +37,21 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Expense__c.Amount__c</field>
+    </columns>
+    <columns>
+        <field>Expense__c.Category__c</field>
+    </columns>
+    <columns>
         <field>Expense__c.Expense_Owner__c</field>
     </columns>
     <columns>
         <field>Expense__c.Summary__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Expense__c.Amount__c</field>
-    </columns>
-    <columns>
         <field>Expense__c.Source__c</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Expense__c.Expense_Date__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>greaterOrEqual</operator>
-            <value>1/1/2019</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Expense__c.Expense_Date__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>lessThan</operator>
-            <value>12/31/2019</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CUST_RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Expense__c.Expense</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
@@ -90,16 +60,16 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Expense__c.Category__c</field>
+        <field>CUST_RECORDTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Expenses by Month and Category</name>
+    <name>Monthly Income vs. Expenses</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>CustomEntity$Expense__c</reportType>
-    <scope>organization</scope>
+    <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

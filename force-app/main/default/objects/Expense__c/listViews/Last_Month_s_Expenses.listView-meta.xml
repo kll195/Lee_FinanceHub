@@ -14,5 +14,10 @@
         <operation>equals</operation>
         <value>LAST_MONTH</value>
     </filters>
+    <filters>
+    <field>RECORDTYPE</field>
+    <operation>equals</operation>
+    <value>Expense__c.Expense</value>
+</filters>
     <label>Last Month&#39;s Expenses</label>
 </ListView>

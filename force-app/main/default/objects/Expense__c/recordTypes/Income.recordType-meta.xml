@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income</fullName>
+    <active>true</active>
+    <label>Income</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Bonus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earned</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Passive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio Investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Return</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expense_Owner__c</picklist>
+        <values>
+            <fullName>Amy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jenny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jenny%27s Mom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kent%27s Parents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Susan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source__c</picklist>
+        <values>
+            <fullName>Jenny%27s Chase Sapphire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jenny%27s Chase Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jenny%27s Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kent%27s Chase Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

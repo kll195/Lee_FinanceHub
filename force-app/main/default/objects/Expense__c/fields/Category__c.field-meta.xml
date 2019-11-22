@@ -96,6 +96,31 @@
                 <default>false</default>
                 <label>Vacation</label>
             </value>
+            <value>
+                <fullName>Tax Return</fullName>
+                <default>false</default>
+                <label>Tax Return</label>
+            </value>
+            <value>
+                <fullName>Portfolio Investment</fullName>
+                <default>false</default>
+                <label>Portfolio Investment</label>
+            </value>
+            <value>
+                <fullName>Earned</fullName>
+                <default>false</default>
+                <label>Earned</label>
+            </value>
+            <value>
+                <fullName>Passive</fullName>
+                <default>false</default>
+                <label>Passive</label>
+            </value>
+            <value>
+                <fullName>Bonus</fullName>
+                <default>false</default>
+                <label>Bonus</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

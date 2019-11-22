@@ -19,5 +19,10 @@
         <operation>lessOrEqual</operation>
         <value>10/31/2019</value>
     </filters>
+    <filters>
+    <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Expense__c.Expense</value>
+    </filters>
     <label>October 2019 Expenses</label>
 </ListView>
