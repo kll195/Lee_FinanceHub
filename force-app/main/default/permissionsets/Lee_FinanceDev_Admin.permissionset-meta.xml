@@ -20,6 +20,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Expense_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Expense__c.Expense_Date__c</field>
         <readable>true</readable>
@@ -27,6 +32,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Expense__c.Expense_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Income_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

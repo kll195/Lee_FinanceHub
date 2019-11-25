@@ -657,7 +657,7 @@
         <showHeader>true</showHeader>
     </screens>
     <startElementReference>Get_Expense</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>emptyExpenseList</name>
         <dataType>SObject</dataType>

@@ -51,6 +51,10 @@
         <field>Expense__c.Summary__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Expense_Splitter</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
